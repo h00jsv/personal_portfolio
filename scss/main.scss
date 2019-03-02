@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 @import "config";
 @import "menu";
 
@@ -11,7 +12,7 @@ body {
   color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
 }
 
@@ -94,6 +95,10 @@ main {
   .bio {
     grid-area: bio;
     font-size: 1.5rem;
+
+    p {
+      font-size: 0.7em;
+    }
   }
   .job-1 {
     grid-area: job1;
@@ -109,6 +114,20 @@ main {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: 5px solid $secondary-color;
+
+    p {
+      font-size: 0.9em;
+      font-style: italic;
+    }
+
+    h5 {
+      margin: 10px 0px;
+      font-size: 1em;
+      font-weight: 300;
+    }
+    li {
+      font-size: 0.9em;
+    }
   }
 }
 
@@ -116,15 +135,17 @@ main {
 .projects {
   display: grid;
   grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 
   // shrink images
   img {
+    height: 250px;
     width: 100%;
-    border: 3px solid #fff;
+    //border: 3px solid #fff;
+    object-fit: cover;
 
     &:hover {
-      opacity: 0.5; /* applies when hovering over the objects */
+      opacity: 0.3; /* applies when hovering over the objects */
       border: 3px solid $secondary-color;
       @include easeOut;
     }

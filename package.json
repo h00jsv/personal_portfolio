@@ -9,6 +9,7 @@
   "author": "Joakim Svedin",
   "license": "MIT",
   "dependencies": {
+    "lightbox2": "^2.10.0",
     "node-sass": "^4.11.0"
   }
 }
