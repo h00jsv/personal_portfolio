@@ -207,11 +207,10 @@ main {
   .projects img {
     height: 250px;
     width: 100%;
-    object-fit: cover; }
+    object-fit: contain; }
     .projects img:hover {
       opacity: 0.3;
       /* applies when hovering over the objects */
-      border: 3px solid #ed8a63;
       transition: all 0.5s ease-out; }
 
 .boxes {
