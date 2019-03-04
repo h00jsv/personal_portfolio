@@ -199,6 +199,9 @@ main {
       font-weight: 300; }
     .about-info .job li {
       font-size: 0.9em; }
+  .about-info .res-link {
+    font-style: italic;
+    color: #ed8a63; }
 
 .projects {
   display: grid;
